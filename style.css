@@ -1,3 +1,7 @@
-.wrapper {
-  font-family: montserrat, arial, helvetica, sans-serif;
+.menu, .info-content__button {
+  font: 700 16px/19px museo_sans_cyrl, arial, helvetica, sans-serif;
+}
+
+.info-content__description {
+  font: 500 16px/19px museo_sans_cyrl, arial, helvetica, sans-serif;
 }

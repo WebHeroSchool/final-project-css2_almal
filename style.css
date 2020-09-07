@@ -1,7 +1,49 @@
+body {
+  background-image: url(img/background.png);
+  font: 500 22px/26px museo_sans_cyrl, arial, helvetica, sans-serif;
+  margin: 0;
+}
+
 .menu, .info-content__button {
-  font: 700 16px/19px museo_sans_cyrl, arial, helvetica, sans-serif;
+  font: 700 22px/26px museo_sans_cyrl, arial, helvetica, sans-serif;
+}
+
+.wrapper {
+  margin: auto;
+  width: 84%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logo {
+  padding: 89px 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 0 17px;
+  text-decoration: none;
+  color: #f8eee4;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
 }
 
 .info-content__description {
-  font: 500 16px/19px museo_sans_cyrl, arial, helvetica, sans-serif;
+  white-space: pre-line;
+  color: #f8eee4;
 }

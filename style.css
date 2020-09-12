@@ -4,14 +4,11 @@ body {
   margin: 0;
 }
 
-.wrapper {
-  margin: auto;
-  width: 84%;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
+  margin: auto;
+  width: 84%;
   padding-top: 89px;
   margin-bottom: 130px;
 }
@@ -41,10 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.info-content {
-  width: 550px;
+  margin-left: 8%;
 }
 
 .info-content__img {
@@ -52,8 +46,9 @@ body {
 }
 
 .info-content__description {
-  color: #F8EEE4;
   margin: 0 0 55px 0;
+  color: #F8EEE4;
+  white-space: pre-line;
 }
 
 .img-content {
@@ -75,7 +70,7 @@ body {
 
 .img-content__img:last-child {
     width: 254px;
-    margin-right: -155px;
+    margin-right: 0;
 }
 
 .info-content__button {

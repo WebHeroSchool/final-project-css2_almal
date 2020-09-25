@@ -5,11 +5,25 @@
     <title>Bali</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fonts.css">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
   </head>
   <body>
     <div class="wrapper">
       <header class="header">
         <img class="logo" src="img/icon.png" alt="">
+        <div class="hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <nav class="menu">
+            <a class="menu__item" href="#">start</a>
+            <a class="menu__item menu__item_active" href="#">services</a>
+            <a class="menu__item" href="#">about</a>
+            <a class="menu__item" href="#">blog</a>
+            <a class="menu__item" href="#">contact us</a>
+          </nav>
+        </div>
         <nav class="menu">
           <a class="menu__item" href="#">Start</a>
           <a class="menu__item" href="#">Services</a>
@@ -18,21 +32,25 @@
           <a class="menu__item" href="#">Contact us</a>
         </nav>
       </header>
-      <section class="content-section">
-        <div class="info-content">
-          <img class="info-content__img" src="img/Bali-title.png" alt="">
-          <p class="info-content__description">Best Bali travel guide with great tips. Book hotels and
-            villas, explore the best spas, events, Bali temples,
-            scuba centers, and activities.
-          </p>
-          <a class="info-content__button" href="#">Book travel</a>
-        </div>
-        <div class="img-content">
-          <img class="img-content__img_big" src="img/1.png" alt="">
-          <img class="img-content__img" src="img/2.png" alt="">
-          <img class="img-content__img" src="img/3.png" alt="">
-        </div>
-      </section>
+      <main class="main-wrapper">
+        <section class="info">
+          <div class="info__content">
+            <div class="content__img">
+              <img class="Indonesia-title" src="img/Indonesia.png" alt="Indonesia">
+            </div>
+            <p class="info__description">
+              Best Bali travel guide with great tips. Book hotels and villas, explore the best spas, events, Bali temples,
+              scuba centers, and activities.
+            </p>
+            <a class="info__button" href="#">Book travel</a>
+          </div>
+        </section>
+        <section class="images">
+          <img class="images__item images__item_big" src="img/1.png" alt="">
+          <img class="images__item" src="img/2.png" alt="">
+          <img class="images__item" src="img/3.png" alt="">
+        </section>
+      </main>
     </div>
   </body>
 </html>

@@ -1,0 +1,316 @@
+body {
+  background: url(img/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font: 500 22px/26px museo_sans_cyrl, arial, helvetica, sans-serif;
+  margin: 0;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 84%;
+  padding-top: 89px;
+  margin-bottom: 130px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font: 700 22px/26px museo_sans_cyrl, arial, helvetica, sans-serif;
+}
+
+.menu__item {
+  margin-right: 34px;
+  text-decoration: none;
+  color: #f8eee4;
+  transition: opacity .5s;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item:hover {
+  opacity: .3;
+}
+
+.main-wrapper {
+  display: flex;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.info__content {
+  max-width: 550px;
+}
+
+.content__img {
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  background: url(img/Bali-background.png) no-repeat;
+  margin-bottom: 50px;
+}
+
+.info__description {
+  color: #fff;
+  margin: 0 0 50px 0;
+}
+
+.info__button {
+  display: inline-block;
+  font: 700 22px/26px museo_sans_cyrl, arial, helvetica, sans-serif;
+  background: #D4BEA3;
+  color: #fff;
+  padding: 17px 87px;
+  text-decoration: none;
+  border-radius: 48px;
+  transition: opacity .5s;
+}
+
+.info__button:hover {
+  opacity: .5;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.images__item {
+  margin-right: 34px;
+  height: 380px;
+}
+
+.images__item_big {
+  height: 422px;
+}
+
+.images__item:last-child {
+  margin-right: 0;
+}
+
+
+
+@media screen and (max-width: 1600px) {
+  .images {
+    margin-left: 0;
+  }
+
+  .images__item {
+    height: 360px;
+  }
+
+  .images__item_big {
+    height: 402px;
+  }
+
+  .header {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .header {
+    padding-top: 63px;
+    margin-bottom: 92px;
+    width: 84%;
+  }
+
+  .logo {
+    height: 39px;
+  }
+
+  .menu {
+    font: 700 16px/19px museo_sans_cyrl, arial, helvetica, sans-serif;
+  }
+
+
+  .Indonesia-title {
+    width: 332px;
+  }
+
+  .content__img {
+    height: 185px;
+    background-size: 96%;
+    margin-bottom: 25px;
+  }
+
+  .images__item {
+    height: 270px;
+    margin-right: 24px;
+  }
+
+  .images__item_big {
+    height: 300px;
+  }
+
+  .images {
+    margin-left: 7%;
+  }
+
+  .info__description {
+    font: 500 16px/19px museo_sans_cyrl, arial, helvetica, sans-serif;
+    margin-bottom: 25px;
+  }
+
+  .info__content {
+    max-width: 400px;
+  }
+
+  .info__button {
+    font: 700 16px/19px museo_sans_cyrl, arial, helvetica, sans-serif;
+    padding: 12px 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    width: 92%;
+  }
+
+  .images {
+    margin-left: 3%;
+  }
+
+  .images__item:last-child {
+    object-fit: cover;
+    object-position: center;
+    height: 270px;
+    width: 37px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .images {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .header {
+    padding-top: 42px;
+    margin-bottom: 55px;
+    width: 80%;
+  }
+
+  .info {
+    text-align: center;
+  }
+
+  .info__content {
+    max-width: 343px;
+  }
+
+  .Indonesia-title {
+    width: 284px;
+  }
+
+  .content__img {
+    height: 170px;
+    margin-bottom: 45px;
+    background-size: 91%;
+  }
+
+  .info__description {
+    font: 500 18px/22px museo_sans_cyrl, arial, helvetica, sans-serif;
+    margin-bottom: 36px;
+    padding: 0 25px 0 25px;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 8px;
+    width: 25px;
+    height: 17px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -6px;
+  }
+
+  .menu__btn > span::after {
+    content: '';
+    top: 6px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 180px 0;
+    background-color: #fff;
+  }
+
+  .menu__item {
+    display: block;
+    font: 700 30px/36px museo_sans_cyrl, arial, helvetica, sans-serif;
+    margin: 0;
+    margin-bottom: 24px;
+    color: #000;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+    background-color: #000;
+  }
+
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #000;
+  }
+
+  #menu__toggle:checked ~ .menu {
+    visibility: visible;
+    right: 0;
+  }
+}
